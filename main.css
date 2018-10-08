@@ -1,0 +1,83 @@
+body {
+    background-color: lightskyblue;
+}
+
+.container {
+    border: 1px solid;
+}
+.jumbotron {
+    background-image:url("./jumboBack.jpg");
+    display: flex;
+    height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+div {
+    border: 1px solid;
+}
+
+.counter {
+    font-size: 50px;
+}
+
+.input-group {
+}
+
+.banner {
+    background-color: lightgray;
+}
+
+.col {
+    border: 1px solid;
+    height: 200px;
+}
+.col-3 {
+    height: 100px;
+}
+
+.main {
+    height: 500px;
+}
+.dateEntry {
+    align-content: right;
+}
+
+p {
+    margin: 0 auto;
+}
+
+.col-md-2 {
+    height: 500px;
+}
+.col-md-6 {
+    height: 500px;
+}
+.col-md-4 {
+    height: 500px;
+}
+
+.row {
+    border: 1px solid;
+}
+
+.row1 {
+    align-text: center;
+}
+.goalRow1 {
+    height: 125px;
+    border: 1px solid;
+}
+.goalRow2 {
+    height: 125px;
+    border: 1px solid;
+}
+.goalRow3 {
+    height: 125px;
+    border: 1px solid;
+}
+.goalRow4 {
+    height: 125px;
+    border: 1px solid;
+}
