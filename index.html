@@ -6,66 +6,310 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
-    <script defer href="./script1.js">
+    <script defer src="./script1.js">
     </script>
     <title>My Recovery</title>
 </head>
 <body>
     <div class="jumbotron">
         <div class="container banner">
-            <h1>MyRecovery</h1>
-            <p class="pull-right">Welcome to MyRecovery. Stay focused. Stay driven. Stay accountable</p>
+            <div class="row">
+                <div class="col-md-6">
+            <img src="logo.png">
         </div>
-
-        <div class="container counter">
-            
+        <div class="col-md-2">
+            <div id="signandlog">
+                <button id="signandlog"onclick="document.getElementById('loginform').style.display='block'">Login</button><br>
+                <button id="signandlog"onclick="document.getElementById('signupform').style.display='block'">Sign Up</button><br>
+                <button id="signandlog"onclick="document.getElementById('id03').style.display='block'">About Us</button>
+                <button id="signandlog"onclick="document.getElementById('id04').style.display='block'">Donate</button>
+                <button id="signandlog"onclick="document.getElementById('id05').style.display='block'">Contact Us</button>
+                
+            </div>
+                </div>
+                <div class="col-md-4 slogan">
+             <p class="slogan">Welcome to MyRecovery.<br>Stay focused.<br>Stay confident.<br>Stay driven.<br>Stay accountable.</p>
+            </div>
+            </div>
+            </div>
+    
+    <div class="container counter">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Sober Date</span>
+                    </div>
+                    <input id="calendar" type="date" onchange="showTime" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p id="soberFor">You have been sober for:</p>
+            </div>
+        </div>
+        <div class="row ticker">
+            <p id="timeTicker"></p>
+        </div>
     </div>
 </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
-            <div class="row1 adjust-header">
-            <p>Add/Adjust Goals</p>
+            <div class="col-md-4 profile">
+            <div class="row1 profile-header ">
+                <p class="header">Profile</p>
             </div>
-            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            <div class="col align-self-center">
+                <br><br>
+            <div class="progress goal1prog">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete (info)
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="row1 profile-header">
-            <p>Profile</p>
-            </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row1 tracker-header">
-            <p>Goal Tracker</p>
+            
+            <div class="progress goal2prog">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete (info)
+                </div>
             </div>
 
-            <div class=" row goalRow1">
+            <div class="progress goal3prog">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete (info)
+                </div>
+            </div>
+
+            <div class="progress goal4prog">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete (info)
+                </div>
+            </div>
+            
+            </div>
+
+            <p class="header">Resources and Connections</p>
+            <ul>
+           <li><a href="https://www.aa.org/"><strong>AA</strong></a></li>
+           <li><a href="https://www.na.org/"><strong>NA</strong></a></li> 
+           <li><a href="https://suicidepreventionlifeline.org/"><strong>Suicide Prevention Lifeline</strong></a></li> 
+           <li><a href="http://adhl.org/"><strong>Alcohol Drug Helpline</strong></a></li> 
+           <li><a href="https://www.dshs.wa.gov/bha/substance-use-treatment-services"><strong>DSHS Agency Directory</strong></a></li> 
+           <li><a href="https://www.nih.gov/"><strong>National Institute of Health</strong></a></li> 
+           <li><a href="https://www.nami.org/"><strong>National Alliance on Mental Illness</strong></a></li> 
+           <li><a href="https://www.samhsa.gov/"><strong>Substance Abuse and Mental Health Services Administration</strong></a></li> 
+           <li><a href="https://www.crisistextline.org/"><strong>Crisis Text Line</strong></a></li> 
+            </ul>
+            </div>
+        <div class="col-md-4 tracker">
+                <div class="row1 tracker-header ">
+            <p class="header">Goal Tracker</p>
+            </div>
+
+            <div class="row goalRow1">
+                    <button id ="g1button"onclick="document.getElementById('goaladd1').style.display='block'" class="w3-button w3-circle w3-black">+</button>
+                <div class="container">
+                    
+                <p id="g1par"></p>
+                </div>
+            </div>
+            
+            <div class="row goalRow2">
+                    <button id="g2button" onclick="document.getElementById('goaladd2').style.display='block'"class="w3-button w3-circle w3-black">+</button>
+                <p id="g2par"></p>
+            </div>
+            
+        </div>
+
+            <div class="col-md-4 tracker">
+                <div class="row1 tracker-header ">
+            <p class="header">Goal Tracker</p>
+            </div>
+
+            <div class="row goalRow3">
+                    <button id ="g3button" onclick="document.getElementById('goaladd3').style.display='block'" class="w3-button w3-circle w3-black">+</button>
+                <p id="g3par"></p>
 
             </div>
-            <div class=" row goalRow2">
-                
+            <div class="row goalRow4">
+                    <button id="g4button" onclick="document.getElementById('goaladd4').style.display='block'"class="w3-button w3-circle w3-black">+</button>
+                <p id="g4par"></p>
             </div>
-            <div class=" row goalRow3">
-                
             </div>
-            <div class=" row goalRow4">
-                
             </div>
-        </div>
-        </div>
     </div>
     <div class="nav">
-    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;"">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">About Us</a>
-                <a class="nav-item nav-link" href="#">Donate</a>
-              </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-light">
+            <a class="navbar-brand" href="#">MyRecovery Inc.©2018</a>
           </nav>
         </div>
+
+
+        <div id="loginform" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('loginform').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="login.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('loginform').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+                  </div>
+    <div id="signupform" class="modal">
+            <span onclick="document.getElementById('signupform').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                        <span onclick="document.getElementById('signupform').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="signup.png" alt="Avatar" class="avatar">
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+            
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('signupform').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+                </div>
+            </form>
+            </div>
+
+    <div id="goaladd1" class="modal">
+    
+        <form class="modal-content animate" action="/action_page.php" target="_index.html">
+            <div class="imgcontainer">
+                    <span onclick="document.getElementById('goaladd1').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <fieldset>
+                <legend>Let's set a goal!</legend>
+                What do you want to achieve?<br>
+                <input type="text" name="goal"><br><br>
+                When is your time frame/end date?<br>
+                <input type="date" name="timeline"><br><br>
+                Who is going to hold you to it?<br>
+                <input type="text" name="contact"><br><br>
+                What is their phone number?
+                What is their email?<br>
+                <input type="phone" name="contactphone">
+                <input type="email" name="contactemail"><br><br>
+                Who is going to hold you to it?<br>
+                <input type="text" name="contact"><br><br>
+                What is their phone number?
+                What is their email?<br>
+                <input type="phone" name="contactphone">
+                <input type="email" name="contactemail"><br><br>
+                <input type="submit" value="Let's do it!">
+            </fieldset>
+        </div>
+            </form>
+        </div>
+
+    <div id="goaladd2" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+        <form action="/action_page.php">
+            <span onclick="document.getElementById('goaladd2').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <fieldset>
+                <legend>Let's set a goal!</legend>
+                What do you want to achieve?<br>
+                <input type="text" name="goal"><br><br>
+                When is your time frame/end date?<br>
+                <input type="date" name="timeline"><br><br>
+                Who is going to hold you to it?<br>
+                <input type="text" name="contact"><br><br>
+                What is their phone number?
+                What is their email?<br>
+                <input type="phone" name="contactphone">
+                <input type="email" name="contactemail"><br><br>
+                Who is going to hold you to it?<br>
+                <input type="text" name="contact"><br><br>
+                What is their phone number?
+                What is their email?<br>
+                <input type="phone" name="contactphone">
+                <input type="email" name="contactemail"><br><br>
+                <input type="submit" value="Let's do it!">
+            </fieldset>
+            </form>
+        </div>
+
+        <div id="goaladd3" class="modal">
+                <form class="modal-content animate" action="/action_page.php">
+                <form action="/action_page.php">
+                    <span onclick="document.getElementById('goaladd3').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <fieldset>
+                    <legend>Let's set a goal!</legend>
+                    What do you want to achieve?<br>
+                    <input type="text" name="goal"><br><br>
+                    When is your time frame/end date?<br>
+                    <input type="date" name="timeline"><br><br>
+                    Who is going to hold you to it?<br>
+                    <input type="text" name="contact"><br><br>
+                    What is their phone number?
+                    What is their email?<br>
+                    <input type="phone" name="contactphone">
+                    <input type="email" name="contactemail"><br><br>
+                    Who is going to hold you to it?<br>
+                    <input type="text" name="contact"><br><br>
+                    What is their phone number?
+                    What is their email?<br>
+                    <input type="phone" name="contactphone">
+                    <input type="email" name="contactemail"><br><br>
+                    <input type="submit" value="Let's do it!">
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="goaladd4" class="modal">
+                <form class="modal-content animate" action="/action_page.php">
+                <form action="/action_page.php">
+                    <span onclick="document.getElementById('goaladd4').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <fieldset>
+                        <legend>Let's set a goal!</legend>
+                        What do you want to achieve?<br>
+                        <input type="text" name="goal"><br><br>
+                        When is your time frame/end date?<br>
+                        <input type="date" name="timeline"><br><br>
+                        Who is going to hold you to it?<br>
+                        <input type="text" name="contact"><br><br>
+                        What is their phone number?
+                        What is their email?<br>
+                        <input type="phone" name="contactphone">
+                        <input type="email" name="contactemail"><br><br>
+                        Who is going to hold you to it?<br>
+                        <input type="text" name="contact"><br><br>
+                        What is their phone number?
+                        What is their email?<br>
+                        <input type="phone" name="contactphone">
+                        <input type="email" name="contactemail"><br><br>
+                        <input type="submit" value="Let's do it!">
+                    </fieldset>
+                    </form>
+                </div>
 </body>
 </html>
