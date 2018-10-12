@@ -16,6 +16,9 @@
             <div class="row">
                 <div class="col-md-6">
             <img id="logo" src="logo.png">
+            <audio id="playaPlaya" controls autoplay>
+                <source src="relax.mp3" type="audio/mpeg">
+              </audio>
         </div>
         <div class="col-md-2">
             <div id="signandlog">
@@ -29,22 +32,36 @@
                 </div>
                 <div class="col-md-4 slogan">
              <p class="slogan">Welcome to MyRecovery.<br>Stay focused.<br>Stay confident.<br>Stay driven.<br>Stay accountable.</p>
+             
             </div>
             </div>
             </div>
     
     <div class="container counter">
-        <div class="row">
+        <div class="row calendars">
             <div class="col-md-3">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Sober Date</span>
+                        <span class="input-group-text" id="basic-addon1">Sober Days</span>
                     </div>
-                    <input id="calendar" type="date" onchange="newFunction" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+                    <input id="calendar1" type="date" onchange="newFunction" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
                 </div>
             </div>
-            <div class="col-md-8">
-                <p id="soberFor">You have been sober for:</p>
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Sober Mins</span>
+                        </div>
+                    <input id="calendar2" type="date" onchange="newFunction" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Sober Hours</span>
+                        </div>
+                    <input id="calendar3" type="date" onchange="newFunction" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+                </div>
             </div>
         </div>
         <div class="row ticker">
@@ -60,33 +77,33 @@
                 <p class="header">Profile</p>
             </div>
             <div class="col align-self-center">
-                <br><br>
-            <div class="progress goal1prog">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:25%">50% Complete
+                
+            <div id="progBar1top" class="progress goal1prog">
+                <div id="progBar1" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="75" style="width:0%">%
                 </div>
             </div>
             
-            <div class="progress goal2prog">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:70%">50% Complete
+            <div id="progBar2top"class="progress goal2prog">
+                <div id="progBar2"class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:25%">% Complete
                 </div>
             </div>
 
-            <div class="progress goal3prog">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete
+            <div id="progBar3top" class="progress goal3prog">
+                <div id="progBar3" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:50%">% Complete
                 </div>
             </div>
 
-            <div class="progress goal4prog">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:50%">50% Complete
+            <div id="progBar4top" class="progress goal4prog">
+                <div id="progBar4" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:75%">% Complete
                 </div>
             </div>
-            
+            <p id="profileName"></p>
             </div>
-
+            <br>
             <p class="header">Resources and Connections</p>
             <ul>
            <li><a href="https://www.aa.org/"><strong>AA</strong></a></li>
@@ -102,35 +119,38 @@
             </div>
         <div class="col-md-4 tracker">
                 <div class="row1 tracker-header ">
-            <p class="header">Goal Tracker
-            <button id="g1button" onclick="document.getElementById('goaladd1').style.display='block'"class="w3-button w3-circle w3-black">+</button>
-            <button id="g2button" onclick="document.getElementById('goaladd2').style.display='block'"class="w3-button w3-circle w3-black">+</button>
-            <button id="g3button" onclick="document.getElementById('goaladd3').style.display='block'"class="w3-button w3-circle w3-black">+</button>
-            <button id="g4button" onclick="document.getElementById('goaladd4').style.display='block'"class="w3-button w3-circle w3-black">+</button>
-            </p>
+            <p class="header">Goal Tracker</p>
             </div>
 
             <div class="container-flex row goalRow">
-                    <p id="g1par"></p>                
+                    <p id="g1par"></p>    
+                <button id="goal1butt">Complete!</button>            
             </div>
             
             <div class="container-flex row goalRow">
                 <p id="g2par"></p>
+                <button id="goal2butt">Complete!</button> 
             </div>
             
         </div>
 
             <div class="col-md-4 tracker">
                 <div class="row1 tracker-header2 ">
-                        <p class="header"></p>
+                    <p class="header">
+                        <button id="g1button" onclick="document.getElementById('goaladd1').style.display='block'"class="w3-button w3-circle w3-black">1</button>
+                        <button id="g2button" onclick="document.getElementById('goaladd2').style.display='block'"class="w3-button w3-circle w3-black">2</button>
+                        <button id="g3button" onclick="document.getElementById('goaladd3').style.display='block'"class="w3-button w3-circle w3-black">3</button>
+                        <button id="g4button" onclick="document.getElementById('goaladd4').style.display='block'"class="w3-button w3-circle w3-black">4</button>
+                    </p>
             </div>
 
             <div class="container-flex row goalRow">
                 <p id="g3par"></p>
-
+                <button id="goal3butt">Complete!</button> 
             </div>
             <div class="container-flex row goalRow">
                 <p id="g4par"></p>
+                <button id="goal4butt">Complete!</button> 
             </div>
             </div>
             </div>
@@ -152,12 +172,12 @@
               
                   <div class="container">
                     <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input id="userName" type="text" placeholder="Enter Username" name="uname" required>
               
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
                       
-                    <button type="submit">Login</button>
+                    <button id="loginButton" type="submit" onclick="document.getElementById('loginform').style.display='none'">Login</button>
                     <label>
                       <input type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
@@ -202,7 +222,7 @@
 
     <div id="goaladd1" class="modal">
     
-        <form class="modal-content animate" action="/action_page.php">
+        <form class="modal-content animate">
             <div class="imgcontainer">
                    
                 <span onclick="document.getElementById('goaladd1').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -220,14 +240,14 @@
                 What is their email?<br>
                 <input id="accountability1Phone" type="phone" name="contactphone" maxlength="13"required>
                 <input id="accountability1Email" type="email" name="contactemail"maxlength="25" required><br><br>
-                <input id="goal1button" type="button" value="Let's do it!">
+                <input id="goal1button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd2').style.display='none'">
             </fieldset>
         </div>
             </form>
         </div>
 
     <div id="goaladd2" class="modal">
-        <form class="modal-content animate" action="/action_page.php">
+        <form class="modal-content animate">
             <div class="imgcontainer">
             <span onclick="document.getElementById('goaladd2').style.display='none'" class="close" title="Close Modal">&times;</span>
             <img src="goal.png" alt="Avatar" class="avatar"><br><br>
@@ -244,7 +264,7 @@
                 What is their email?<br>
                 <input id="accountability2Phone" type="phone" name="contactphone" maxlength="13">
                 <input id="accountability2Email" type="email" name="contactemail" maxlength="25"><br><br>
-                <input id="goal2button" type="button" value="Let's do it!">
+                <input id="goal2button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd2').style.display='none'">
             </fieldset>
         </div>
             </form>
@@ -261,14 +281,14 @@
                     When is your start date?<br>
                     <input id="goal3Start" type="date" name="timeline" required><br><br>
                     When is your end date?<br>
-                <   <input id="goal3End" type="date" name="timeline" required><br><br>
+                    <input id="goal3End" type="date" name="timeline" required><br><br>
                     Who is going to hold you to it?<br>
                     <input id="accountability3" type="text" name="contact" maxlength="20"><br><br>
                     What is their phone number?
                     What is their email?<br>
                     <input id="accountability3Phone" type="phone" name="contactphone" maxlength="13">
                     <input id="accountability3Email" type="email" name="contactemail" maxlength="25"><br><br>
-                    <input id="goal3button" type="button" value="Let's do it!">
+                    <input id="goal3button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd3').style.display='none'">
                 
                 </fieldset>
             </div>
@@ -293,7 +313,7 @@
                         What is their email?<br>
                         <input id="accountability4Phone" type="phone" name="contactphone" maxlength="13">
                         <input id="accountability4Email" type="email" name="contactemail" maxlength="25"><br><br>
-                        <input id="goal4button" type="button" value="Let's do it!">
+                        <input id="goal4button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd4').style.display='none'">
                     </fieldset>
                 </div>
                     </form>

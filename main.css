@@ -16,12 +16,23 @@ body {
     display: flex;
     height: 400px;
 }
+
+#progBar1top {
+}
+
+.calendars {
+    display:flex;
+    justify-content:space-between;
+}
+
 .slogan {
+    padding-right:25px;
     padding-top: 25px;
     float:right;
     height: 250px;
     font-size-adjust: 50px;
     text-align: center;
+    font-family:serif;
 }
 
 #g1par #g2par #g3par #g4par {
@@ -66,10 +77,11 @@ div {
 .counter {
     font-size: 30px;
     background-color: lightgray;
+    margin:6px;
 }
 
 .ticker {
-    height: 200px;
+    height: 180px;
     background-color:white;
 }
 #timeTicker {
@@ -77,20 +89,25 @@ div {
    font-size:110px;
 }
 
+#playaPlaya {
+    padding-left:90px;
+}
+
 #logo {
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .input-group {
+    padding: 10px;
 }
 
 .banner {
     background-color: lightgray;
     display:flex;
+    margin:6px;
 }
 
 .col {
-   border:1px solid;
     height: 200px;
 }
 .col-3 {
@@ -112,6 +129,7 @@ p {
     margin: 0 auto;
     color: black;
     text-align: center;
+    background-color: lightgray;
 }
 
 .adjust {
@@ -122,9 +140,9 @@ p {
 }
 .tracker {
     height: 500px;
+    background-color:lightgray;
 }
 .tracker-header2 {
-    padding-top: 45px;
 }
 
 .row {
@@ -150,11 +168,11 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-#signandlog {
-    padding-top: 12px;
-    align-content:center;
-    width:90%;
+#profileName {
+    font-size:35px;
+    text-align:center;
 }
+
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
@@ -168,7 +186,7 @@ img.avatar {
 }
 
 .container {
-    padding: 16px;
+    
 }
 
 span.psw {
@@ -193,7 +211,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: lightgray;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -241,21 +259,6 @@ span.psw {
        width: 100%;
     }
 }
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
   
   .button:hover {background-color: #3e8e41}
   
@@ -272,30 +275,95 @@ span.psw {
   }
 
   /* Set a style for all buttons */
-button {
+  /* #g1button #g2button #g3button #g4button  */
+  
+  button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 14px;
+    padding: 10px 14px;
     margin: 0 auto;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
+#signandlog {
+    padding-top: 21px;
+    align-content:center;
+    width:90%;
+}
 .w3-button {
-padding: 1px 1px;
-margin: 0
+    padding: 0px 7px;
+    margin: 0
+}
+#goal1butt {
 
+    background-color:green;
+    color:white;
+    height:10%;
+    width:20%;
+    float: right;
+    cursor: pointer;
+    font-size:12px;
 
 }
+
+#goal2butt {
+
+    background-color:green;
+    color:white;
+    height:10%;
+    width:20%;
+    float: right;
+    cursor: pointer;
+    font-size:12px;
+
+}
+
+#goal3butt {
+
+    background-color:green;
+    color:white;
+    height:10%;
+    width:20%;
+    float: right;
+    cursor: pointer;
+    font-size:12px;
+
+}
+
+#goal4butt {
+
+    background-color:green;
+    color:white;
+    height:10%;
+    width:20%;
+    float: right;
+    cursor: pointer;
+    font-size:12px;
+
+}
+/* 
+.button {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+  } */
