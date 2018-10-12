@@ -166,7 +166,6 @@ function daysBetween1 (date1,date2) {
     const id = setInterval(bumpUp, 400)
 
     function bumpUp(){
-        console.log(firstProg.style.width)
         if (firstProg.style.width !== "100%") {
             
             var newVar = progWidth1.slice(0,length-1)
@@ -196,10 +195,9 @@ function daysBetween2 (date1,date2) {
     var kiddingMe = whatsTheDifferenceBetweenMeAndYou/100;
     var progWidth1 = secondProg.style.width
 
-    const id = setInterval(bumpUp, kiddingMe)
+    const id = setInterval(bumpUp, 800)
 
     function bumpUp(){
-        console.log(secondProg.style.width)
         if (secondProg.style.width !== "100%") {
             
             var newVar = progWidth1.slice(0,length-1)
@@ -228,7 +226,7 @@ function daysBetween3 (date1,date2) {
     var kiddingMe = whatsTheDifferenceBetweenMeAndYou/100;
     var progWidth1 = thirdProg.style.width
 
-    const id = setInterval(bumpUp, kiddingMe)
+    const id = setInterval(bumpUp, 3000)
 
     function bumpUp(){
         if (thirdProg.style.width !== "100%") {
@@ -259,7 +257,7 @@ function daysBetween4 (date1,date2) {
     var kiddingMe = whatsTheDifferenceBetweenMeAndYou/100;
     var progWidth1 = fourthProg.style.width
 
-    const id = setInterval(bumpUp, kiddingMe)
+    const id = setInterval(bumpUp, 6000)
 
     function bumpUp(){
         if (fourthProg.style.width !== "100%") {
@@ -279,11 +277,6 @@ function daysBetween4 (date1,date2) {
     }
 }
 
-
-//get goal buttons smaller and justified right
-
-//fix requirements for goal form
-//space top containers
 
 //Username/Profile established
 var profile = document.getElementById('profileName')
@@ -320,10 +313,3 @@ function clear4 () {
     document.getElementById('g4par').textContent = " "
     fourthProg.style.width="0%"
 }
-
-
-
-// // document.getElementById('goal1button').addEventListener('click', () => goal1set(event));
-// document.getElementById('goal2button').addEventListener('click', () => goal2set(event));
-// document.getElementById('goal3button').addEventListener('click', () => goal3set(event));
-// document.getElementById('goal4button').addEventListener('click', () => goal4set(event));

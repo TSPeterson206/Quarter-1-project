@@ -16,9 +16,6 @@
             <div class="row">
                 <div class="col-md-6">
             <img id="logo" src="logo.png">
-            <audio id="playaPlaya" controls autoplay>
-                <source src="relax.mp3" type="audio/mpeg">
-              </audio>
         </div>
         <div class="col-md-2">
             <div id="signandlog">
@@ -86,19 +83,19 @@
             
             <div id="progBar2top"class="progress goal2prog">
                 <div id="progBar2"class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:25%">% Complete
+                aria-valuemin="0" aria-valuemax="100" style="width:0%">% Complete
                 </div>
             </div>
 
             <div id="progBar3top" class="progress goal3prog">
                 <div id="progBar3" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:50%">% Complete
+                aria-valuemin="0" aria-valuemax="100" style="width:0%">% Complete
                 </div>
             </div>
 
             <div id="progBar4top" class="progress goal4prog">
                 <div id="progBar4" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="50"
-                aria-valuemin="0" aria-valuemax="100" style="width:75%">% Complete
+                aria-valuemin="0" aria-valuemax="100" style="width:0%">% Complete
                 </div>
             </div>
             <p id="profileName"></p>
@@ -124,12 +121,12 @@
 
             <div class="container-flex row goalRow">
                     <p id="g1par"></p>    
-                <button id="goal1butt">Complete!</button>            
+                <button id="goal1butt">✔</button>            
             </div>
             
             <div class="container-flex row goalRow">
                 <p id="g2par"></p>
-                <button id="goal2butt">Complete!</button> 
+                <button id="goal2butt">✔</button> 
             </div>
             
         </div>
@@ -146,11 +143,11 @@
 
             <div class="container-flex row goalRow">
                 <p id="g3par"></p>
-                <button id="goal3butt">Complete!</button> 
+                <button id="goal3butt">✔</button> 
             </div>
             <div class="container-flex row goalRow">
                 <p id="g4par"></p>
-                <button id="goal4butt">Complete!</button> 
+                <button id="goal4butt">✔</button> 
             </div>
             </div>
             </div>
@@ -158,13 +155,16 @@
     <div class="nav">
     <nav class="navbar navbar-expand-lg navbar navbar-light">
             <a class="navbar-brand" href="#">MyRecovery Inc.©2018</a>
+            <audio id="playaPlaya" controls autoplay>
+                <source src="relax.mp3" type="audio/mpeg">
+              </audio>
           </nav>
         </div>
 
 
         <div id="loginform" class="modal">
   
-                <form class="modal-content animate" action="/action_page.php">
+                <form class="modal-content animate">
                   <div class="imgcontainer">
                     <span onclick="document.getElementById('loginform').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img src="login.png" alt="Avatar" class="avatar">
@@ -221,10 +221,8 @@
             </div>
 
     <div id="goaladd1" class="modal">
-    
         <form class="modal-content animate">
             <div class="imgcontainer">
-                   
                 <span onclick="document.getElementById('goaladd1').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <img src="goal.png" alt="Avatar" class="avatar"><br><br>
             <fieldset>
@@ -240,7 +238,7 @@
                 What is their email?<br>
                 <input id="accountability1Phone" type="phone" name="contactphone" maxlength="13"required>
                 <input id="accountability1Email" type="email" name="contactemail"maxlength="25" required><br><br>
-                <input id="goal1button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd2').style.display='none'">
+                <input id="goal1button" type="submit" value="Let's do it!">
             </fieldset>
         </div>
             </form>
@@ -253,42 +251,42 @@
             <img src="goal.png" alt="Avatar" class="avatar"><br><br>
             <fieldset>
                 What do you want to achieve?<br>
-                <input id="goal2text" type="text" name="goal"maxlength="60"><br><br>
+                <input id="goal2text" type="text" name="goal"maxlength="60" required><br><br>
                 When is your start date?<br>
                 <input id="goal2Start" type="date" name="timeline" required><br><br>
                 When is your end date?<br>
                 <input id="goal2End" type="date" name="timeline" required><br><br>
                 Who is going to hold you to it?<br>
-                <input id="accountability2" type="text" name="contact"maxlength="20"><br><br>
+                <input id="accountability2" type="text" name="contact"maxlength="20" required><br><br>
                 What is their phone number?
                 What is their email?<br>
-                <input id="accountability2Phone" type="phone" name="contactphone" maxlength="13">
-                <input id="accountability2Email" type="email" name="contactemail" maxlength="25"><br><br>
-                <input id="goal2button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd2').style.display='none'">
+                <input id="accountability2Phone" type="phone" name="contactphone" maxlength="13" required>
+                <input id="accountability2Email" type="email" name="contactemail" maxlength="25" required><br><br>
+                <input id="goal2button" type="submit" value="Let's do it!">
             </fieldset>
         </div>
             </form>
         </div>
 
         <div id="goaladd3" class="modal">
-                <form class="modal-content animate" action="/action_page.php">
+                <form class="modal-content animate">
                     <div class="imgcontainer">
                     <span onclick="document.getElementById('goaladd3').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img src="goal.png" alt="Avatar" class="avatar"><br><br>
                 <fieldset>
                     What do you want to achieve?<br>
-                    <input id="goal3text" type="text" name="goal"maxlength="60"><br><br>
+                    <input id="goal3text" type="text" name="goal" maxlength="60" required><br><br>
                     When is your start date?<br>
                     <input id="goal3Start" type="date" name="timeline" required><br><br>
                     When is your end date?<br>
                     <input id="goal3End" type="date" name="timeline" required><br><br>
                     Who is going to hold you to it?<br>
-                    <input id="accountability3" type="text" name="contact" maxlength="20"><br><br>
+                    <input id="accountability3" type="text" name="contact" maxlength="20" required><br><br>
                     What is their phone number?
                     What is their email?<br>
-                    <input id="accountability3Phone" type="phone" name="contactphone" maxlength="13">
-                    <input id="accountability3Email" type="email" name="contactemail" maxlength="25"><br><br>
-                    <input id="goal3button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd3').style.display='none'">
+                    <input id="accountability3Phone" type="phone" name="contactphone" maxlength="13" required>
+                    <input id="accountability3Email" type="email" name="contactemail" maxlength="25" required><br><br>
+                    <input id="goal3button" type="submit" value="Let's do it!">
                 
                 </fieldset>
             </div>
@@ -296,24 +294,24 @@
         </div>
 
         <div id="goaladd4" class="modal">
-                <form class="modal-content animate" action="/action_page.php">
+                <form class="modal-content animate">
                     <div class="imgcontainer">
                     <span onclick="document.getElementById('goaladd4').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img src="goal.png" alt="Avatar" class="avatar"><br><br>
                     <fieldset>
                         What do you want to achieve?<br>
-                        <input id="goal4text" type="text" name="goal" maxlength="60"><br><br>
+                        <input id="goal4text" type="text" name="goal" maxlength="60" required><br><br>
                         When is your start date?<br>
                         <input id="goal4Start" type="date" name="timeline" required><br><br>
                         When is your end date?<br>
                         <input id="goal4End" type="date" name="timeline" required><br><br>
                         Who is going to hold you to it?<br>
-                        <input id="accountability4" type="text" name="contact" maxlength="20"><br><br>
+                        <input id="accountability4" type="text" name="contact" maxlength="20" required><br><br>
                         What is their phone number?
                         What is their email?<br>
-                        <input id="accountability4Phone" type="phone" name="contactphone" maxlength="13">
-                        <input id="accountability4Email" type="email" name="contactemail" maxlength="25"><br><br>
-                        <input id="goal4button" type="submit" value="Let's do it!" onclick="document.getElementById('goaladd4').style.display='none'">
+                        <input id="accountability4Phone" type="phone" name="contactphone" maxlength="13" required>
+                        <input id="accountability4Email" type="email" name="contactemail" maxlength="25" required><br><br>
+                        <input id="goal4button" type="submit" value="Let's do it!">
                     </fieldset>
                 </div>
                     </form>

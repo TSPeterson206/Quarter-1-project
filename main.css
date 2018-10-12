@@ -90,11 +90,13 @@ div {
 }
 
 #playaPlaya {
-    padding-left:90px;
+    float:right;
+    width:50px;
+
 }
 
 #logo {
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 .input-group {
@@ -154,7 +156,7 @@ p {
     margin: 0 auto;
 }
 .goalRow {
-    height: 220px;
+    height: 230px;
     border: 1px solid;
     font-size:22px;
 }
@@ -299,6 +301,7 @@ button:hover {
 
 #signandlog {
     padding-top: 21px;
+    margin-left:16px;
     align-content:center;
     width:90%;
 }
@@ -308,49 +311,55 @@ button:hover {
 }
 #goal1butt {
 
-    background-color:green;
+    background-color: lightgray;
     color:white;
-    height:10%;
-    width:20%;
+    height:25px;
+    width:20px;
     float: right;
     cursor: pointer;
-    font-size:12px;
-
+    font-size:40px;
+    margin-right:22px;
+    margin-bottom: 40px;
 }
 
 #goal2butt {
 
-    background-color:green;
+    background-color:lightgray;
     color:white;
-    height:10%;
-    width:20%;
+    height:25px;
+    width:20px;
     float: right;
     cursor: pointer;
-    font-size:12px;
-
+    font-size:40px;
+    margin-right:22px;
+    margin-bottom:40px;
 }
 
 #goal3butt {
-
-    background-color:green;
+    background-color:lightgray;
     color:white;
-    height:10%;
-    width:20%;
+    height:25px;
+    width:20px;
     float: right;
     cursor: pointer;
-    font-size:12px;
-
+    font-size:40px;
+    margin-right:22px;
+    margin-bottom: 40px;
 }
 
 #goal4butt {
 
-    background-color:green;
+    background-color: lightgray;
     color:white;
-    height:10%;
-    width:20%;
+    height:10px;
+    width:10px;
     float: right;
     cursor: pointer;
-    font-size:12px;
+    font-size:40px;
+    text-align: center;
+    margin-right:22px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
 
 }
 /* 
