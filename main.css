@@ -17,7 +17,12 @@ body {
     height: 400px;
 }
 
-#progBar1top {
+.nav {
+    background-image:url("./jumboBack.jpg");
+}
+
+.navbar {
+    background-image:url("./jumboBack.jpg");
 }
 
 .calendars {
@@ -35,10 +40,6 @@ body {
     font-family:serif;
 }
 
-#g1par #g2par #g3par #g4par {
-
-}
-
 ul {
     justify-content:center;
     margin: 0 auto;
@@ -48,13 +49,7 @@ ul {
     color:black;
 }
 
-.nav {
-    background-image:url("./jumboBack.jpg");
-}
 
-.navbar {
-    background-image:url("./jumboBack.jpg");
-}
 
 #soberFor {
     font-size: 50px;
@@ -144,8 +139,6 @@ p {
     height: 500px;
     background-color:lightgray;
 }
-.tracker-header2 {
-}
 
 .row {
     border: 1px solid;
@@ -185,10 +178,6 @@ input[type=text], input[type=password] {
 img.avatar {
     width: 40%;
     border-radius: 50%;
-}
-
-.container {
-    
 }
 
 span.psw {
@@ -252,7 +241,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
@@ -261,7 +250,7 @@ span.psw {
        width: 100%;
     }
 }
-  
+   */
   .button:hover {background-color: #3e8e41}
   
   .button:active {
@@ -275,9 +264,6 @@ span.psw {
       margin: 0 auto;
       align-content:center;
   }
-
-  /* Set a style for all buttons */
-  /* #g1button #g2button #g3button #g4button  */
   
   button {
     background-color: #4CAF50;
@@ -306,10 +292,10 @@ button:hover {
     width:90%;
 }
 .w3-button {
-    padding: 0px 7px;
+    padding: 0px 0px;
     margin: 0
 }
-#goal1butt {
+#goalButt {
 
     background-color: lightgray;
     color:white;
@@ -321,58 +307,3 @@ button:hover {
     margin-right:22px;
     margin-bottom: 40px;
 }
-
-#goal2butt {
-
-    background-color:lightgray;
-    color:white;
-    height:25px;
-    width:20px;
-    float: right;
-    cursor: pointer;
-    font-size:40px;
-    margin-right:22px;
-    margin-bottom:40px;
-}
-
-#goal3butt {
-    background-color:lightgray;
-    color:white;
-    height:25px;
-    width:20px;
-    float: right;
-    cursor: pointer;
-    font-size:40px;
-    margin-right:22px;
-    margin-bottom: 40px;
-}
-
-#goal4butt {
-
-    background-color: lightgray;
-    color:white;
-    height:10px;
-    width:10px;
-    float: right;
-    cursor: pointer;
-    font-size:40px;
-    text-align: center;
-    margin-right:22px;
-    margin-bottom: 40px;
-    padding-bottom: 15px;
-
-}
-/* 
-.button {
-    display: inline-block;
-    padding: 5px 5px;
-    font-size: 12px;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 9px #999;
-  } */
