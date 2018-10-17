@@ -45,10 +45,10 @@ var tickTickBoom = document.getElementById("calendar1");
 
 function tallyDays () {
     var days = Date.now()-new Date(tickTickBoom.value).getTime();
-    document.getElementById('timeTicker').textContent = Math.round(days/86400000) + " days";
+    document.querySelector('.timeTicker').textContent = Math.round(days/86400000) + " days";
     var storedDate = Math.round(days/86400000) + " days";
     localStorage.setItem("savedDate", storedDate);
-    document.getElementById('timeTicker').textContent = localStorage.getItem("savedDate");
+    document.querySelector('.timeTicker').textContent = localStorage.getItem("savedDate");
 }
 
 tickTickBoom.addEventListener('change', tallyDays)
@@ -59,10 +59,10 @@ var tickTickBoomer = document.getElementById("calendar2");
 
 function tallyMinutes () {
     var minutes = Date.now()-new Date(tickTickBoomer.value).getTime();
-    document.getElementById('timeTicker').textContent = Math.round(minutes/60000) + " mins";
+    document.querySelector('.timeTicker').textContent = Math.round(minutes/60000) + " mins";
     var storederDate = Math.round(minutes/60000) + " mins";
     localStorage.setItem("savederDate", storederDate);
-    document.getElementById('timeTicker').textContent = localStorage.getItem("savederDate");
+    document.querySelector('.timeTicker').textContent = localStorage.getItem("savederDate");
 }
 
 tickTickBoomer.addEventListener('change', tallyMinutes)
@@ -73,10 +73,10 @@ var tickTickBoomest = document.getElementById("calendar3");
 
 function tallyHours () {
     var hours = Date.now()-new Date(tickTickBoomest.value).getTime();
-    document.getElementById('timeTicker').textContent = Math.round(hours/3600000) + " hours";
+    document.querySelector('.timeTicker').textContent = Math.round(hours/3600000) + " hours";
     var storedestDate = Math.round(hours/3600000) + " hours";
     localStorage.setItem("savedestDate", storedestDate);
-    document.getElementById('timeTicker').textContent = localStorage.getItem("savedestDate");
+    document.querySelector('.timeTicker').textContent = localStorage.getItem("savedestDate");
 }
 
 tickTickBoomest.addEventListener('change', tallyHours)
@@ -84,9 +84,9 @@ tickTickBoomest.addEventListener('change', tallyHours)
 
 
 //local storage for ticker(3)
-document.getElementById('timeTicker').textContent = localStorage.getItem("savedDate");
-document.getElementById('timeTicker').textContent = localStorage.getItem("savederDate");
-document.getElementById('timeTicker').textContent = localStorage.getItem("savedestDate");
+document.querySelector('.timeTicker').textContent = localStorage.getItem("savedDate");
+document.querySelector('.timeTicker').textContent = localStorage.getItem("savederDate");
+document.querySelector('.timeTicker').textContent = localStorage.getItem("savedestDate");
 
 //local storage for goal1
 g1text.innerHTML = localStorage.getItem("1");
