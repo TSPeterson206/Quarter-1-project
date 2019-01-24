@@ -156,9 +156,6 @@ function changeProfile () {
 
 logBut.addEventListener('click', changeProfile)
 
-profile.textContent = localStorage.getItem("profileName") 
-
-
 // Clear Buttons
 document.getElementById('goal1butt').addEventListener('click', clear1)
 document.getElementById('goal2butt').addEventListener('click', clear2)
