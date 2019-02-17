@@ -9,7 +9,7 @@ Feel free to add a goal via pressing on any of the numbered buttons on the right
 Your goal will remain even when you leave the page and return! Enjoy!
 
 
-![Alt text](https://github.com/TSPeterson206/Quarter-1-project/blob/master/screenshot.png "Screenshot")
+![Alt text](https://github.com/TSPeterson206/Quarter-1-project/blob/master/images/screenshot.png "Screenshot")
 
 
 
