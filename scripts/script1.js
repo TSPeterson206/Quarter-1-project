@@ -111,10 +111,7 @@ document.getElementById('goal2button').addEventListener('click', () => daysBetwe
 document.getElementById('goal3button').addEventListener('click', () => daysBetween1(goal3Start.value,goal3End.value, thirdProg))
 document.getElementById('goal4button').addEventListener('click', () => daysBetween1(goal4Start.value,goal4End.value, fourthProg))
 
-
-
 function daysBetween1 (date1,date2, barNum) {
-    
     var newDate1 = date1.toString();
     var newDate2 = date2.toString();
     var date1Time = new Date(newDate1).getTime();
@@ -128,7 +125,6 @@ function daysBetween1 (date1,date2, barNum) {
 
     function bumpUp(){
         if (barNum.style.width !== "100%") {
-            
             var newVar = progWidth1.slice(0,length-1)
             var newerVar = parseInt(newVar)
             newerVar+=1
