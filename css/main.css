@@ -2,7 +2,7 @@ body {
     background-color: lightgreen;
 }
 .row {
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 /* Centering and wrapping for all paragraph text (6) */
@@ -15,7 +15,7 @@ p {
 .jumbotron {
     background-image:url("../images/jumboBack.jpg");
     display: flex;
-    height: 400px;
+    /* height: 400px; */
 }
 
 /* Banner for sign-in, slogan and logo */
@@ -23,22 +23,33 @@ p {
     border: 1px solid;
     background-color: lightgray;
     display:flex;
-    margin:6px;
+    /* margin:6px; */
     justify-content:space-between;
 }
 
 .logo {
-    padding-top: 35px;
+    background-size:cover;
+    padding-top: 5px;
+    width:100%;
+}
+
+.logoColumn {
+    display:flex;
 }
 
 .slogan {
-    padding-right:25px;
-    padding-top: 25px;
-    float:right;
-    height: 250px;
-    font-size-adjust: 50px;
+    /* padding:25px; */
+    /* float:right; */
+    /* height: 250px; */
+    font-size: 50px;
     text-align: center;
     font-family:serif;
+}
+
+.sloganColumn {
+    display:flex;
+    margin-top:1%;
+    flex:wrap;
 }
 
 /* Calendars */
@@ -53,25 +64,45 @@ p {
     border: 1px solid;
     font-size: 30px;
     background-color: lightgray;
-    margin:6px;
+    /* margin:6px; */
 }
+
+.daysCalendar {
+    text-align:center;
+    /* height:50%; */
+    margin-top:2%;
+/* display:flex; */
+justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Time display window */
 .ticker {
-    height: 180px;
-    background-color:white;
+    /* height: 180px; */
+    /* background-color:white; */
     text-align:center;
-    
+    margin-top:5%;
+
 }
 
 /* Ticker display text */
-.timeTicker {
-    padding-top: 60px;
-    font-size-adjust: 100px;
+.timeTicker, .ticker {
+    /* padding-top: 60px; */
+    /* font-size-adjust: 100px; */
     font-size:150px;
 }
 
 /* Resources list */
+
+/* Bottom Container */
+.container-fluid {
+    padding:10px;
+}
 ul {
     text-align:center;
     list-style: none;
@@ -85,7 +116,7 @@ ul {
 }
 
 .input-group {
-    padding: 10px;
+    /* padding: 10px; */
 }
 /* profile column */
 .profile{
@@ -122,7 +153,7 @@ ul {
 
 /* Nav bar */
 .nav, .navbar-brand {
-    background-image:url("./jumboBack.jpg");
+    background-image:url("../images/jumboBack.jpg");
     padding-top: 12px;
     font-size: 35px;
     color: black;
@@ -267,4 +298,35 @@ span.psw {
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
+}
+
+@media only screen and (min-width: 300px) 
+and (max-width:999px) {
+.logo {
+    /* width:225px; */
+    background-size:cover;
+    padding-top: 5px;
+    width:100%;
+}
+
+.slogan {
+    padding:5px;
+    /* float:right; */
+    /* height: 250px; */
+    font-size: 10px;
+    /* text-align: center; */
+    /* font-family:serif; */
+}
+
+.daysCalendar {
+    margin-left:25%;
+}
+
+.tracker {
+    /* padding:10px; */
+}
+
+.profile{
+    margin-bottom:15px;
+}
 }
