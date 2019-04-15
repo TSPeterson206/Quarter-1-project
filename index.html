@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script defer src="../scripts/script1.js">
     </script>
     <title>My Recovery</title>
@@ -50,7 +51,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="ticker">
-                        <p class="timeTicker"></p>
+                        <span class="timeTicker"></span>
                     </div>
 
                 </div>
@@ -128,17 +129,17 @@
                 </div>
 
                 <div class="container-flex row goalRow">
-                        <button id="g1button" onclick="document.getElementById('goaladd1').style.display='block'"
-                        class="w3-button w3-circle w3-black">1</button>
+                    <i class="far fa-play-circle w3-button w3-circle w3-black" onclick="document.getElementById('goaladd1').style.display='block'"></i>
+                        <i class="far fa-times-circle goalButt" id="goal1butt"></i>
+
                     <p id="g1par"></p>
-                    <button class="goalButt" id="goal1butt">✔</button>
+                    <!-- <button class="goalButt" id="goal1butt">✔</button> -->
                 </div>
 
                 <div class="container-flex row goalRow">
-                        <button id="g2button" onclick="document.getElementById('goaladd2').style.display='block'"
-                        class="w3-button w3-circle w3-black">2</button>
+                    <i class="far fa-play-circle w3-button w3-circle w3-black" onclick="document.getElementById('goaladd2').style.display='block'"></i>
+                    <i class="far fa-times-circle goalButt" id="goal2butt"></i>
                     <p id="g2par"></p>
-                    <button class="goalButt" id="goal2butt">✔</button>
                 </div>
 
             </div>
@@ -158,25 +159,23 @@
                 </div>
 
                 <div class="container-flex row goalRow">
-                        <button id="g3button" onclick="document.getElementById('goaladd3').style.display='block'"
-                        class="w3-button w3-circle w3-black">3</button>
+                    <i class="far fa-play-circle w3-button w3-circle w3-black" onclick="document.getElementById('goaladd3').style.display='block'"></i>
+                    <i class="far fa-times-circle goalButt" id="goal3butt"></i>
                     <p id="g3par"></p>
-                    <button class="goalButt" id="goal3butt">✔</button>
                 </div>
                 <div class="container-flex row goalRow">
-                        <button id="g4button" onclick="document.getElementById('goaladd4').style.display='block'"
-                        class="w3-button w3-circle w3-black">4</button>
+                    <i class="far fa-play-circle w3-button w3-circle w3-black" onclick="document.getElementById('goaladd4').style.display='block'"></i>
+                    <i class="far fa-times-circle goalButt" id="goal4butt"></i>
                     <p id="g4par"></p>
-                    <button class="goalButt" id="goal4butt">✔</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="nav">
+    <footer class="nav">
         <nav class="navbar navbar-expand-lg navbar navbar-light">
             <a class="navbar-brand" href="#">MyRecovery Inc.©2018</a>
         </nav>
-    </div>
+    </footer>
 
 
     <div id="loginform" class="modal">
@@ -185,7 +184,6 @@
             <div class="imgcontainer">
                 <span onclick="document.getElementById('loginform').style.display='none'" class="close"
                     title="Close Modal">&times;</span>
-                <img src="login.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
@@ -216,7 +214,6 @@
             <div class="imgcontainer">
                 <span onclick="document.getElementById('signupform').style.display='none'" class="close"
                     title="Close Modal">&times;</span>
-                <img src="signup.png" alt="Avatar" class="avatar">
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <label for="email"><b>Email</b></label>
