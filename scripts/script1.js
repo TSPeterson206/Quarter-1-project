@@ -129,7 +129,7 @@ function daysBetween1 (date1, date2, barNum) {
   var kiddingMe = whatsTheDifferenceBetweenMeAndYou / 100
   var progWidth1 = barNum.style.width
   // interval should be the var kiddingMe, set to 1000 for exhibition purposes
-   theOne = setInterval(bumpUp, 1000)
+  theOne = setInterval(bumpUp, 1000)
   //  console.log(theOne)
   console.log('main', theOne)
   function bumpUp () {
@@ -146,9 +146,6 @@ function daysBetween1 (date1, date2, barNum) {
       alert('Goal Completed!')
     }
   }
-  
-
-
 }
 
 // Clear Buttons
@@ -159,7 +156,7 @@ document.getElementById('goal4butt').addEventListener('click', clear4)
 
 function clear1 () {
   document.getElementById('g1par').textContent = ' '
-  Prog1.style.width = '0%';
+  Prog1.style.width = '0%'
 }
 
 function clear2 () {
@@ -174,8 +171,6 @@ function clear4 () {
   document.getElementById('g4par').textContent = ' '
   Prog4.style.width = '0%'
 }
-
-
 
 // Username/Profile established
 var profile = document.getElementById('profileName')
