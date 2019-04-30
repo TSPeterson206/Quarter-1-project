@@ -28,7 +28,7 @@ p {
 
 .logo {
     background-size:cover;
-    padding-top: 5px;
+    padding: 10px;
     width:100%;
 }
 
@@ -73,6 +73,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
   }
+
 
 /* Time display window */
 .ticker {
@@ -127,23 +128,10 @@ ul {
 
 /* Guidelines for goal boxes */
 .goalRow {
-    height: 230px;
+    height: 50%;
     border: 1px solid;
     font-size:22px;
-}
-
-/* Profile name text */
-.profileName {
-    font-size:35px;
-    text-align:center;
-}
-
-/* Nav bar */
-.nav, .navbar-brand {
-    background-image:url("../images/jumboBack.jpg");
-    padding-top: 12px;
-    font-size: 35px;
-    color: black;
+    padding-left:8px;
 }
 
 /* Buttons */
@@ -184,21 +172,21 @@ button:hover {
 
 /* Goal set buttons */
 .w3-button {
-    padding: 0px 0px;
-    margin: 0
+    /* padding: 0px 0px;
+    margin: 0 */
 }
 
 /* Clear buttons */
 .goalButt {
-    background-color: lightgray;
+    /* background-color: lightgray;
     color:black;
-    height:25px;
-    width:20px;
-    float: right;
+    height:25px; */
+    /* width:20px; */
+    /* float: right; */
     cursor: pointer;
-    font-size:40px;
-    margin-right:22px;
-    margin-bottom: 40px;
+    /* font-size:40px; */
+    /* margin-right:22px;
+    margin-bottom: 40px; */
 }
 
 /* Modals */
@@ -286,6 +274,43 @@ span.psw {
     to {transform: scale(1)}
 }
 
+
+/* Time display window */
+.ticker {
+    /* height: 180px; */
+    /* background-color:white; */
+    text-align:center;
+    margin-top:5%;
+
+}
+
+/* Ticker display text */
+.timeTicker {
+    /* padding-top: 60px; */
+    /* font-size-adjust: 100px; */
+    font-size:60px;
+}
+
+footer {
+    text-align:center;
+}
+
+/* Profile name text */
+.profileName {
+    font-size:35px;
+    text-align:center;
+}
+
+/* Nav bar */
+.nav, .navbar-brand {
+    background-image:url("../images/jumboBack.jpg");
+    /* padding-top: 12px; */
+    font-size: 35px;
+    color:lightgrey;
+    text-align:center;
+display:flex;
+}
+
 @media only screen and (min-width: 300px) 
 and (max-width:999px) {
 .logo {
@@ -307,4 +332,10 @@ and (max-width:999px) {
 .profile{
     margin-bottom:15px;
 }
+
+.navbar-brand, .nav {
+    background-image:url("../images/jumboBack.jpg");
+    font-size: 30px;
+}
+
 }

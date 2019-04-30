@@ -98,21 +98,28 @@ g3text.innerHTML = localStorage.getItem('3')
 g4text.innerHTML = localStorage.getItem('4')
 
 // Goal 1 progress bar
-var firstProg = document.getElementById('progBar1')
+var Prog1 = document.getElementById('progBar1')
 // Goal 2 progress bar
-var secondProg = document.getElementById('progBar2')
+var Prog2 = document.getElementById('progBar2')
 // Goal 3 progress bar
-var thirdProg = document.getElementById('progBar3')
+var Prog3 = document.getElementById('progBar3')
 // Goal 4 progress bar
-var fourthProg = document.getElementById('progBar4')
+var Prog4 = document.getElementById('progBar4')
 
-document.getElementById('goal1button').addEventListener('click', () => daysBetween1(goal1Start.value, goal1End.value, firstProg))
-document.getElementById('goal2button').addEventListener('click', () => daysBetween1(goal2Start.value, goal2End.value, secondProg))
-document.getElementById('goal3button').addEventListener('click', () => daysBetween1(goal3Start.value, goal3End.value, thirdProg))
-document.getElementById('goal4button').addEventListener('click', () => daysBetween1(goal4Start.value, goal4End.value, fourthProg))
+document.getElementById('goal1button').addEventListener('click', () => daysBetween1(goal1Start.value, goal1End.value, Prog1))
+document.getElementById('goal2button').addEventListener('click', () => daysBetween1(goal2Start.value, goal2End.value, Prog2))
+document.getElementById('goal3button').addEventListener('click', () => daysBetween1(goal3Start.value, goal3End.value, Prog3))
+document.getElementById('goal4button').addEventListener('click', () => daysBetween1(goal4Start.value, goal4End.value, Prog4))
+
+let progressStatus1 = 1
+let progressStatus2 = 2
+let progressStatus3 = 3
+let progressStatus4 = 4
 
 function daysBetween1 (date1, date2, barNum) {
-  console.log(date1,date2,barNum)
+  // console.log(date1,date2,barNum.id)
+  let theOne = `theOne${barNum.id}`
+  console.log(theOne)
   var newDate1 = date1.toString()
   var newDate2 = date2.toString()
   var date1Time = new Date(newDate1).getTime()
@@ -122,8 +129,9 @@ function daysBetween1 (date1, date2, barNum) {
   var kiddingMe = whatsTheDifferenceBetweenMeAndYou / 100
   var progWidth1 = barNum.style.width
   // interval should be the var kiddingMe, set to 1000 for exhibition purposes
-  const id = setInterval(bumpUp, 1000)
-
+  theOne = setInterval(bumpUp, 1000)
+  //  console.log(theOne)
+  console.log('main', theOne)
   function bumpUp () {
     if (barNum.style.width !== '100%') {
       var newVar = progWidth1.slice(0, length - 1)
@@ -134,13 +142,35 @@ function daysBetween1 (date1, date2, barNum) {
       barNum.style.width = progWidth1
       barNum.textContent = progWidth1
     } else {
-      clearInterval(id)
+      clearInterval(theOne)
       alert('Goal Completed!')
     }
   }
 }
 
-console.log('ttingdaysbetween', daysBetween1('2019-04-01', '2019-04-04', firstProg))
+// Clear Buttons
+document.getElementById('goal1butt').addEventListener('click', clear1)
+document.getElementById('goal2butt').addEventListener('click', clear2)
+document.getElementById('goal3butt').addEventListener('click', clear3)
+document.getElementById('goal4butt').addEventListener('click', clear4)
+
+function clear1 () {
+  document.getElementById('g1par').textContent = ' '
+  Prog1.style.width = '0%'
+}
+
+function clear2 () {
+  document.getElementById('g2par').textContent = ' '
+  Prog2.style.width = '0%'
+}
+function clear3 () {
+  document.getElementById('g3par').textContent = ' '
+  Prog3.style.width = '0%'
+}
+function clear4 () {
+  document.getElementById('g4par').textContent = ' '
+  Prog4.style.width = '0%'
+}
 
 // Username/Profile established
 var profile = document.getElementById('profileName')
@@ -153,26 +183,3 @@ function changeProfile () {
 }
 
 logBut.addEventListener('click', changeProfile)
-
-// Clear Buttons
-document.getElementById('goal1butt').addEventListener('click', clear1)
-document.getElementById('goal2butt').addEventListener('click', clear2)
-document.getElementById('goal3butt').addEventListener('click', clear3)
-document.getElementById('goal4butt').addEventListener('click', clear4)
-
-function clear1 () {
-  document.getElementById('g1par').textContent = ' '
-  firstProg.style.width = '0%'
-}
-function clear2 () {
-  document.getElementById('g2par').textContent = ' '
-  secondProg.style.width = '0%'
-}
-function clear3 () {
-  document.getElementById('g3par').textContent = ' '
-  thirdProg.style.width = '0%'
-}
-function clear4 () {
-  document.getElementById('g4par').textContent = ' '
-  fourthProg.style.width = '0%'
-}

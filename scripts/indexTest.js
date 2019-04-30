@@ -82,4 +82,4 @@ function tallyDays () {
 //   document.querySelector('.timeTicker').textContent = localStorage.getItem('savedestDate')
 // }
 
-module.exports = {daysBetween1, clear1, clear2, clear3, clear4, tallyDays}
+module.exports = { daysBetween1, clear1, clear2, clear3, clear4, tallyDays }
