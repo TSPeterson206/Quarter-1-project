@@ -15,7 +15,6 @@ p {
 .jumbotron {
     background-image:url("../images/jumboBack.jpg");
     display: flex;
-    /* height: 400px; */
 }
 
 /* Banner for sign-in, slogan and logo */
@@ -38,9 +37,6 @@ p {
 }
 
 .slogan {
-    /* padding:25px; */
-    /* float:right; */
-    /* height: 250px; */
     font-size: 50px;
     text-align: center;
     font-family:serif;
@@ -64,14 +60,11 @@ p {
     border: 1px solid;
     font-size: 30px;
     background-color: lightgray;
-    /* margin:6px; */
 }
 
 .daysCalendar {
     text-align:center;
-    /* height:50%; */
     margin-top:2%;
-/* display:flex; */
 justify-content: center;
 }
 
@@ -83,8 +76,6 @@ justify-content: center;
 
 /* Time display window */
 .ticker {
-    /* height: 180px; */
-    /* background-color:white; */
     text-align:center;
     margin-top:5%;
 
@@ -92,8 +83,6 @@ justify-content: center;
 
 /* Ticker display text */
 .timeTicker, .ticker {
-    /* padding-top: 60px; */
-    /* font-size-adjust: 100px; */
     font-size:150px;
 }
 
@@ -115,9 +104,7 @@ ul {
     width:50px;
 }
 
-.input-group {
-    /* padding: 10px; */
-}
+
 /* profile column */
 .profile{
     height: 500px;
@@ -192,7 +179,6 @@ button:hover {
 #signIn {
     padding-top: 21px;
     margin-left:16px;
-    /* align-content:center; */
     width:90%;
 }
 
@@ -311,19 +297,11 @@ and (max-width:999px) {
 
 .slogan {
     padding:5px;
-    /* float:right; */
-    /* height: 250px; */
     font-size: 10px;
-    /* text-align: center; */
-    /* font-family:serif; */
 }
 
 .daysCalendar {
     margin-left:25%;
-}
-
-.tracker {
-    /* padding:10px; */
 }
 
 .profile{
